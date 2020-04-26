@@ -144,9 +144,6 @@
             </div></div></div></div>
    <p align="center"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQHDtzDGylbAx8rlvbqzgIqRYIMjXm6-S1n61GOszEIn7md1MBGQK6WOkN2LJMaQUrwyQhIkdc2lCO/pubhtml?gid=697030726&amp;single=true&amp;widget=true&amp;headers=false" width="1100" height="500" style="border:none"></iframe></p>
    
-    <div style="position: relative;height: 0;overflow: hidden;padding-bottom: 56.25%;">
-    <iframe id="embededGame" src="https://play.idevgames.co.uk/embed/reaction" scrolling="no" seamless="seamless" frameBorder="0" width="1000";height="500";">Browser not compatible.</iframe>
-    </div>
     <footer class="footer-section bg-light">
       <div class="container">
         <div class="row">
@@ -215,20 +212,6 @@
             return false;
                 }
     </script>
-    <script>
-    window.onload = function() {
-        var thegamelink = "https://play.idevgames.co.uk/embed/reaction";
-        var ref = document.referrer;
-        var theurl = document.referrer;
-        ref = ref.substring(ref.indexOf("://") + 3);
-        ref = ref.split("/")[0];
-        if(ref == "my-ga.me"){
-        theurl = "true"
-        } else {
-            theurl = "false"
-        } 
-        document.getElementById("embededGame").src = thegamelink+"/"+theurl;
-    }
     </script>
   </body>
 </html>
